@@ -47,3 +47,11 @@ function updateConScore() {document.getElementById('conAbility').innerHTML = con
 function updateIntScore() {document.getElementById('intAbility').innerHTML = intScore}
 function updateWisScore() {document.getElementById('wisAbility').innerHTML = wisScore}
 function updateChaScore() {document.getElementById('chaAbility').innerHTML = chaScore}
+
+const menu = document.querySelector("#mobileMenu")
+const menuLinks = document.querySelector(".navbarMenu")
+
+menu.addEventListener("click", function() {
+    menu.classList.toggle("isActive")
+    menuLinks.classList.toggle("active")
+})
